@@ -43,190 +43,7 @@ export function Home() {
         updateMetaTag('geo.region', 'KE-30');
         updateMetaTag('geo.placename', 'Kibwezi');
         updateMetaTag('geo.position', '-2.4167;37.9667');
-        const manufacturerSchema = {
-            "@context": "https://schema.org",
-            "@type": "Manufacturer",
-            "name": "DAZEL Detergents & Skin Care",
-            "alternateName": "DAZEL®",
-            "url": "https://www.dazelworld.co.ke",
-            "logo": "https://www.dazelworld.co.ke/logo.jpg",
-            "image": "https://www.dazelworld.co.ke/logo.jpg",
-            "description": "Leading manufacturer of quality detergents and skin care products in Kenya. Serving retailers, distributors, and wholesalers across East Africa.",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Kibwezi",
-                "addressRegion": "Makueni County",
-                "addressCountry": "KE"
-            },
-            "contactPoint": [
-                {
-                    "@type": "ContactPoint",
-                    "telephone": "+254-112-430-829",
-                    "contactType": "sales",
-                    "email": "info@dazelworld.co.ke",
-                    "availableLanguage": ["en", "sw"],
-                    "areaServed": "KE",
-                    "contactOption": "TollFree"
-                },
-                {
-                    "@type": "ContactPoint",
-                    "contactType": "customer support",
-                    "email": "info@dazelworld.co.ke",
-                    "availableLanguage": ["en", "sw"]
-                }
-            ],
-            "sameAs": [
-                "https://www.facebook.com/share/1Cjofjtmez/",
-                "https://www.instagram.com/dazelworld",
-                "https://x.com/dazelworld",
-                "https://www.tiktok.com/@dazelworld"
-            ],
-            "knowsAbout": [
-                "Detergent Manufacturing",
-                "Skin Care Products",
-                "Personal Care Products",
-                "Cleaning Products",
-                "Wholesale Distribution",
-                "B2B Supply Chain"
-            ],
-            "makesOffer": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Product",
-                        "name": "DAZEL® Product Line"
-                    },
-                    "availability": "https://schema.org/InStock",
-                    "businessFunction": "http://purl.org/goodrelations/v1#Sell",
-                    "eligibleRegion": {
-                        "@type": "Country",
-                        "name": "Kenya"
-                    }
-                }
-            ]
-        };
-        const productsData = [
-            {
-                "@context": "https://schema.org/",
-                "@type": "Product",
-                "name": "DAZEL® Cream Multipurpose Bar Soap",
-                "description": "Rich, stable lather. Effective cleansing action. Gentle on skin and fabrics. Suitable for both bathing and laundry. Available in 1kg and 600g sizes. Contact us for wholesale pricing and bulk orders.",
-                "image": "https://www.dazelworld.co.ke/img/creamBarSoap.jpeg",
-                "sku": "DAZEL-SOAP-001",
-                "category": "Cleaning Products",
-                "brand": {
-                    "@type": "Brand",
-                    "name": "DAZEL®"
-                },
-                "manufacturer": {
-                    "@type": "Organization",
-                    "name": "DAZEL® Detergents & Skin Care",
-                    "url": "https://www.dazelworld.co.ke"
-                },
-                "additionalProperty": [
-                    {
-                        "@type": "PropertyValue",
-                        "name": "Available Sizes",
-                        "value": "600g, 1kg"
-                    },
-                    {
-                        "@type": "PropertyValue",
-                        "name": "Business Model",
-                        "value": "B2B Wholesale"
-                    }
-                ]
-            },
-            {
-                "@context": "https://schema.org/",
-                "@type": "Product",
-                "name": "DAZEL® Fresh Powder Detergent",
-                "description": "Fine, free-flowing texture. Effective cleansing of dirt and stains. Gentle on skin and fabric. Fresh, pleasant fragrance. Available in 100g, 250g, 500g, 1kg, 5kg, and 10kg sizes. Bulk wholesale pricing available.",
-                "image": "https://www.dazelworld.co.ke/img/powder-detergent.jpg",
-                "sku": "DAZEL-DET-002",
-                "category": "Cleaning Products",
-                "brand": {
-                    "@type": "Brand",
-                    "name": "DAZEL®"
-                },
-                "manufacturer": {
-                    "@type": "Organization",
-                    "name": "DAZEL® Detergents & Skin Care",
-                    "url": "https://www.dazelworld.co.ke"
-                },
-                "additionalProperty": [
-                    {
-                        "@type": "PropertyValue",
-                        "name": "Available Sizes",
-                        "value": "100g, 250g, 500g, 1kg, 5kg, 10kg"
-                    },
-                    {
-                        "@type": "PropertyValue",
-                        "name": "Business Model",
-                        "value": "B2B Wholesale"
-                    }
-                ]
-            },
-            {
-                "@context": "https://schema.org/",
-                "@type": "Product",
-                "name": "DAZEL® Elūra Body Lotion",
-                "description": "Smooth, easily absorbed texture. Moisturizes and softens skin. Gentle for daily use. Light, pleasant fragrance. Available in 150ml and 250ml sizes. Wholesale distribution available.",
-                "image": "https://www.dazelworld.co.ke/img/body-lotion.jpg",
-                "sku": "DAZEL-LOTION-003",
-                "category": "Personal Care",
-                "brand": {
-                    "@type": "Brand",
-                    "name": "DAZEL®"
-                },
-                "manufacturer": {
-                    "@type": "Organization",
-                    "name": "DAZEL® Detergents & Skin Care",
-                    "url": "https://www.dazelworld.co.ke"
-                },
-                "additionalProperty": [
-                    {
-                        "@type": "PropertyValue",
-                        "name": "Available Sizes",
-                        "value": "150ml, 250ml"
-                    },
-                    {
-                        "@type": "PropertyValue",
-                        "name": "Business Model",
-                        "value": "B2B Wholesale"
-                    }
-                ]
-            },
-            {
-                "@context": "https://schema.org/",
-                "@type": "Product",
-                "name": "DAZEL® SkinDew Baby Jelly",
-                "description": "Soft, smooth, non-greasy. Moisturizes and keeps skin supple. Suitable for all skin types. Mild, pleasant fragrance. Available in 50g, 100g, and 200g sizes. Contact for distributor pricing.",
-                "image": "https://www.dazelworld.co.ke/img/baby-jelly.jpg",
-                "sku": "DAZEL-JELLY-004",
-                "category": "Personal Care",
-                "brand": {
-                    "@type": "Brand",
-                    "name": "DAZEL®"
-                },
-                "manufacturer": {
-                    "@type": "Organization",
-                    "name": "DAZEL® Detergents & Skin Care",
-                    "url": "https://www.dazelworld.co.ke"
-                },
-                "additionalProperty": [
-                    {
-                        "@type": "PropertyValue",
-                        "name": "Available Sizes",
-                        "value": "50g, 100g, 200g"
-                    },
-                    {
-                        "@type": "PropertyValue",
-                        "name": "Business Model",
-                        "value": "B2B Wholesale"
-                    }
-                ]
-            }
-        ];
+
         const breadcrumbSchema = {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
@@ -251,8 +68,8 @@ export function Home() {
                 }
             ]
         };
+
         const faqSchema = {
-        // FAQ Schema for Common Questions
             "@context": "https://schema.org",
             "@type": "FAQPage",
             "mainEntity": [
@@ -309,13 +126,10 @@ export function Home() {
             }
             script.textContent = JSON.stringify(data);
         };
-        addStructuredData('manufacturer-schema', manufacturerSchema);
+
         addStructuredData('breadcrumb-schema', breadcrumbSchema);
         addStructuredData('faq-schema', faqSchema);
 
-        productsData.forEach((product, index) => {
-            addStructuredData(`product-schema-${index}`, product);
-        });
         let canonical = document.querySelector('link[rel="canonical"]');
         if (!canonical) {
             canonical = document.createElement('link');
@@ -325,6 +139,7 @@ export function Home() {
         canonical.href = 'https://www.dazelworld.co.ke';
 
     }, []);
+
     return (
         <div className="min-h-screen bg-white font-sans text-[#1A1A1A]">
             <Navigation />
