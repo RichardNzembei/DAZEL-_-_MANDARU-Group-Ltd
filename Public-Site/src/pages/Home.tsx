@@ -24,7 +24,6 @@ export function Home() {
             }
             meta.setAttribute('content', content);
         };
-
         updateMetaTag('description', 'DAZEL® manufactures high-quality detergents and skin care products in Kenya. Wholesale supplier of multipurpose bar soap, body lotions, baby jelly, and powder detergent. Made in Kibwezi, Kenya.');
         updateMetaTag('keywords', 'DAZEL, detergents manufacturer Kenya, skin care products wholesale Kenya, bar soap manufacturer, body lotion supplier, baby jelly, powder detergent, Kibwezi Kenya, cleaning products manufacturer, B2B personal care');
         updateMetaTag('author', 'DAZEL Detergents & Skin Care');
@@ -45,6 +44,7 @@ export function Home() {
         updateMetaTag('geo.placename', 'Kibwezi');
         updateMetaTag('geo.position', '-2.4167;37.9667');
 
+        // Manufacturer Schema (B2B Focus)
         const structuredData = {
             "@context": "https://schema.org",
             "@type": "Manufacturer",
@@ -95,6 +95,12 @@ export function Home() {
                 "manufacturer": {
                     "@type": "Organization",
                     "name": "DAZEL® Detergents & Skin Care"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "url": "https://www.dazelworld.co.ke/#contact",
+                    "availability": "https://schema.org/InStock",
+                    "priceCurrency": "KES"
                 }
             },
             {
@@ -111,6 +117,12 @@ export function Home() {
                 "manufacturer": {
                     "@type": "Organization",
                     "name": "DAZEL® Detergents & Skin Care"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "url": "https://www.dazelworld.co.ke/#contact",
+                    "availability": "https://schema.org/InStock",
+                    "priceCurrency": "KES"
                 }
             },
             {
@@ -127,6 +139,12 @@ export function Home() {
                 "manufacturer": {
                     "@type": "Organization",
                     "name": "DAZEL® Detergents & Skin Care"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "url": "https://www.dazelworld.co.ke/#contact",
+                    "availability": "https://schema.org/InStock",
+                    "priceCurrency": "KES"
                 }
             },
             {
@@ -143,6 +161,12 @@ export function Home() {
                 "manufacturer": {
                     "@type": "Organization",
                     "name": "DAZEL® Detergents & Skin Care"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "url": "https://www.dazelworld.co.ke/#contact",
+                    "availability": "https://schema.org/InStock",
+                    "priceCurrency": "KES"
                 }
             }
         ];
