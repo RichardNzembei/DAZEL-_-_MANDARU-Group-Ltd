@@ -39,8 +39,8 @@ export function Hero() {
               <span className="text-[#0A4D68]">Meets Care.</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 md:mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-              Experience the perfect balance of gentle skin care and effective
-              cleaning with DAZEL® products. Proudly made in Kibwezi, Kenya.
+              Experience the perfect balance of effective
+              cleaning and gentle skin care with DAZEL® products. Proudly made in Kibwezi, Kenya.
             </p>
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-3 md:gap-4">
               <Button size="lg" onClick={scrollToProducts} className="w-full sm:w-auto">
