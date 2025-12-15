@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Check, Star, Droplets, Sparkles, Baby, Package } from 'lucide-react';
-import { Button } from './ui/Button';
+import { Button } from './Button.tsx';
 
 const products = [{
   name: 'DAZEL® Cream Multipurpose Bar Soap',

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone } from 'lucide-react';
-import { Button } from './ui/Button';
+import { Button } from './Button.tsx';
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Button } from './ui/Button';
+import { Button } from './Button.tsx';
 import { ArrowRight, Sparkles } from 'lucide-react';
 export function Hero() {
   const scrollToProducts = () => {
