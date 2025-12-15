@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Send } from 'lucide-react';
-import { Button } from './ui/Button';
+import { Button } from './Button.tsx';
 
 export function Contact() {
   const [formData, setFormData] = useState({
