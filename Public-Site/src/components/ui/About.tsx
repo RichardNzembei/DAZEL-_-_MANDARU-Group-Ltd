@@ -53,11 +53,8 @@ export function About() {
         }} transition={{
           delay: 0.1
         }} className="text-base md:text-lg text-gray-600 leading-relaxed px-4">
-            DAZEL® is the registered flagship brand of all Dazel Detergents &
-            Skin Care products, offering a full range of affordable,
-            high-quality hygiene, cleaning and personal care solutions. We
-            deliver effective products that enhance daily life and provide
-            consistent value to consumers.
+            DAZEL® is the flagship registered brand of Dazel Detergents & Skin Care, offering a wide range of high-quality and affordable cleaning, hygiene and skin care solutions.
+            We are committed to delivering effective products that enhance everyday living while providing consistent value to consumers.
           </motion.p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16 max-w-5xl mx-auto">
@@ -78,9 +75,7 @@ export function About() {
               </div>
               <h3 className="text-xl md:text-2xl font-bold mb-3">Our Vision</h3>
               <p className="text-blue-50 leading-relaxed">
-                To be the leading brand in regional hygiene and personal care,
-                delivering affordable, high-quality and effective products that
-                enhance daily life.
+                To be the leading regional brand in cleaning, hygiene and personal skin care, where clean meets care, Made With Love..
               </p>
             </div>
           </motion.div>
@@ -104,9 +99,7 @@ export function About() {
                 Our Mission
               </h3>
               <p className="text-blue-50 leading-relaxed">
-                To manufacture and distribute high-quality products through
-                intentional formulation, operational excellence, and responsible
-                practices.
+                To formulate, manufacture and distribute high-quality and effective cleaning, hygiene and personal skin care products through consistency, discipline and care.
               </p>
             </div>
           </motion.div>

@@ -8,11 +8,10 @@ export function Footer() {
         <div className="space-y-3 md:space-y-4 sm:col-span-2 lg:col-span-1">
           <h3 className="text-xl md:text-2xl font-bold tracking-tight">
             DAZEL<span className="text-[#088395]">®</span>
-          </h3>
+          </h3><br/>
           <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
             Where Clean Meets Care. Bringing high-quality detergents and skin
-            care products to every Kenyan home. Made with love, for the
-            family.
+            care products to every Kenyan home. Made With Love.
           </p>
         </div>
         <div>
