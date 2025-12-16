@@ -12,15 +12,6 @@ const products = [{
   image: '/img/creamBarSoap.jpeg',
   featured: true
 }, {
-  name: 'DAZEL® Naturals',
-  subtitle: 'Body Oils, Hair Oils & Exotic Soaps',
-  icon: Droplets,
-  color: 'bg-gradient-to-br from-purple-600 to-pink-500',
-  features: ['Purely natural ingredients', 'Carefully crafted formulations', 'Healthy, glowing skin', 'Vibrant, nourished hair', 'Safe for family use (babies 3+ months)'],
-  image: '/img/velvetnaurish.jpeg',
-  featured: false,
-  special: true
-}, {
   name: 'DAZEL® Fresh Powder Detergent',
   sizes: ['100g', '250g', '500g', '1kg', '5kg', '10kg'],
   icon: Package,
@@ -41,8 +32,16 @@ const products = [{
   color: 'bg-pink-500',
   features: ['Soft, smooth, non-greasy', 'Moisturizes and keeps skin supple', 'Suitable for all skin types', 'Mild, pleasant fragrance'],
   image: '/img/skinDew.png'
+}, {
+  name: 'DAZEL® Naturals',
+  subtitle: 'Body Oils, Hair Oils & Exotic Soaps',
+  icon: Droplets,
+  color: 'bg-gradient-to-br from-purple-600 to-pink-500',
+  description: 'Purely natural, carefully crafted skincare and haircare solutions designed for healthy, glowing skin and vibrant hair.',
+  image: '/img/velvetnaurish.jpeg',
+  featured: false,
+  special: true
 }];
-
 export function Products() {
   const featuredProduct = products.find(p => p.featured);
   const otherProducts = products.filter(p => !p.featured);
@@ -120,6 +119,7 @@ export function Products() {
                     </div>
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[#088395] rounded-full opacity-20 blur-3xl -z-10" />
                   </motion.div>
+
                   <motion.div
                       initial={{ opacity: 0, x: 50 }}
                       whileInView={{ opacity: 1, x: 0 }}
@@ -173,6 +173,7 @@ export function Products() {
                 </div>
               </div>
           )}
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {otherProducts.map((product, index) => (
                 <motion.div
@@ -194,6 +195,7 @@ export function Products() {
                       {React.createElement(product.icon, { size: 64, className: "text-[#088395]" })}
                     </div>
                   </div>
+
                   <div className="p-6 flex flex-col flex-grow">
                     <h3 className="text-lg md:text-xl font-bold mb-1 text-gray-900">
                       {product.name}
@@ -207,19 +209,26 @@ export function Products() {
                         <div className="flex flex-wrap gap-1.5 mb-4">
                           {product.sizes.map(size => (
                               <span key={size} className="px-2.5 py-1 bg-[#088395]/10 text-[#088395] rounded text-xs font-medium">
-                            {size}
-                          </span>
+                        {size}
+                      </span>
                           ))}
                         </div>
                     )}
-                    <ul className="space-y-2.5 mb-6 flex-grow">
-                      {product.features.map((feature, i) => (
-                          <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
-                            <Check size={16} className="text-[#088395] flex-shrink-0 mt-0.5" />
-                            <span>{feature}</span>
-                          </li>
-                      ))}
-                    </ul>
+
+                    {product.description ? (
+                        <p className="text-sm text-gray-600 mb-6 flex-grow leading-relaxed">
+                          {product.description}
+                        </p>
+                    ) : (
+                        <ul className="space-y-2.5 mb-6 flex-grow">
+                          {product.features.map((feature, i) => (
+                              <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
+                                <Check size={16} className="text-[#088395] flex-shrink-0 mt-0.5" />
+                                <span>{feature}</span>
+                              </li>
+                          ))}
+                        </ul>
+                    )}
                     <Button
                         variant="outline"
                         className="w-full mt-auto"
